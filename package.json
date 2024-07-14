@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/liminfinity/shri2024-task",
+  "homepage": "https://bulat232.github.io/shri2024-task/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -16,7 +16,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-virtualized-auto-sizer": "^1.0.24",
-    "react-window": "^1.8.10"
+    "react-window": "^1.8.10",
+    "webpack-dev-server": "^5.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
