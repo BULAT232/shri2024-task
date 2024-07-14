@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { TABS, TABS_KEYS } from "../../data";
-import Event from "../Event/Event";
+import { TABS, TABS_KEYS } from "../consts";
+import Event from "./Event";
 
 export default function Devices({ activeTab }) {
     const ref = useRef({});

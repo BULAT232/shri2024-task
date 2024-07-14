@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { TABS, TABS_KEYS } from "../../data";
-import Devices from "../Devices/Devices";
+import { TABS, TABS_KEYS } from "../consts";
+import FavouriteDevices from "./FavouriteDevices";
 
 export default function Main() {    
     const [activeTab, setActiveTab] = useState(new URLSearchParams(location.search).get('tab') || 'all');
@@ -36,7 +36,7 @@ export default function Main() {
                     )}
                 </ul>
             </div>
-            <Devices activeTab={activeTab} />
+            <FavouriteDevices activeTab={activeTab} />
         </>
     )
 }

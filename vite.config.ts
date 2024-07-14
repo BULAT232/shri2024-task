@@ -1,23 +1,26 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
 import { ViteMinifyPlugin } from "vite-plugin-minify";
-import react from "@vitejs/plugin-react-swc";
+import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), ViteMinifyPlugin()],
+  plugins: [
+    react(),
+    ViteMinifyPlugin(),
+  ],
   server: {
     port: 3000,
   },
-  base: "./",
+  base: './',
   build: {
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes("node_modules")) {
-            return "vendor";
+          if (id.includes('node_modules')) {
+            return 'vendor';
           }
-          if (id.includes("src/components")) {
-            return "components";
+          if (id.includes('src/components')) {
+            return 'components';
           }
         },
       },
