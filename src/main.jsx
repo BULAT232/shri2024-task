@@ -2,7 +2,7 @@ import {createRoot} from 'react-dom/client'
 import Main from './components/Main/Main.jsx'
 import { StrictMode } from 'react'
 import Header from './components/Header/Header.jsx'
-
+import { render } from 'react-dom'
 
 createRoot(document.getElementById('header')).render(
   <StrictMode>
